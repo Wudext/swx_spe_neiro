@@ -2,3 +2,5 @@ pandas
 openpyxl
 scikit-learn
 matplotlib
+torch
+optuna

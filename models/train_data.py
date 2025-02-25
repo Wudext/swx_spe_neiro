@@ -52,8 +52,8 @@ def prepare_train_data(
     X_train = df_clean[features].astype("float32")
     Y_train = df_clean[targets].astype("float32")
 
-    X_train['Xmax, W/m2'] = np.log10(X_train['Xmax, W/m2'] + 1e-10)
-    Y_train['P10, pfu'] = np.log10(Y_train['P10, pfu'] + 1)
+    X_train["Xmax, W/m2"] = np.log10(X_train["Xmax, W/m2"] + 1e-10)
+    Y_train["P10, pfu"] = np.log10(Y_train["P10, pfu"] + 1)
 
     return X_train, Y_train
 
